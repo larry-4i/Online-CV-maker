@@ -1,203 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Info-Tec CV Services</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Info-Tec CV Services</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f4f4;
-      color: #333;
-    }<h3>Payment Method</h3>
-<p>Pay via M-Pesa:</p>
-<p><strong>Number:</strong> 0797337490</p>
-<p>After payment, send your details via WhatsApp.</p>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+}
 
-    header {
-      background: #1e3a8a;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+header {
+    background: #0a66c2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #0f172a;
-    }
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
 
-    nav a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-    }
+.card {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
-    nav a:hover {
-      background: #2563eb;
-    }
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
 
-    section {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-    }
+button {
+    background: #0a66c2;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-      background: white;
-      margin-top: 20px;
-      border-radius: 10px;
-    }
+button:hover {
+    background: #004182;
+}
 
-    .btn {
-      background: #2563eb;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-    }
+.whatsapp {
+    background: #25D366;
+}
 
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
+.pay {
+    background: #ff9800;
+}
 
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #666;
+}
+</style>
 
-    form {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-    }
-
-    button {
-      background: #16a34a;
-      color: white;
-      padding: 10px;
-      border: none;
-      width: 100%;
-      cursor: pointer;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #0f172a;
-      color: white;
-      margin-top: 20px;
-    }
-  </style>
 </head>
 
 <body>
 
 <header>
-  <h1>Info-Tec CV Services</h1>
-  <p>Professional CVs That Get You Hired</p>
+    <h1>Info-Tec CV Services</h1>
+    <p>Professional CV Writing & Job Application Support</p>
 </header>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#services">Services</a>
-  <a href="#order">Order</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<!-- HOME -->
-<section id="home" class="hero">
-  <h2>Get a Professional CV in 24 Hours</h2>
-  <p>We help you create CVs that stand out and get interviews.</p>
-  <a href="#order" class="btn">Order Your CV Now</a>
-</section>
-
-<!-- SERVICES -->
-<section id="services">
-  <h2>Our Services</h2>
-  <div class="services">
+<div class="container">
 
     <div class="card">
-      <h3>Basic CV</h3>
-      <p>KSh 300</p>
+        <h2>Order Your CV</h2>
+
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            
+            <label>Full Name</label>
+            <input type="text" name="name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Phone Number (WhatsApp)</label>
+            <input type="text" name="phone" required>
+
+            <label>Career Level</label>
+            <select name="level">
+                <option>Student</option>
+                <option>Graduate</option>
+                <option>Professional</option>
+            </select>
+
+            <label>Details for CV</label>
+            <textarea name="message" rows="5" placeholder="Write your education, skills, experience..." required></textarea>
+
+            <button type="submit">Submit CV Request</button>
+        </form>
     </div>
 
     <div class="card">
-      <h3>Standard CV</h3>
-      <p>KSh 700</p>
+        <h2>Quick WhatsApp Order</h2>
+        <a href="https://wa.me/254797337490?text=Hello%20I%20want%20a%20CV%20from%20Info-Tec" target="_blank">
+            <button class="whatsapp">Order on WhatsApp</button>
+        </a>
     </div>
 
     <div class="card">
-      <h3>Premium CV + Cover Letter</h3>
-      <p>KSh 1,500</p>
+        <h2>Make Payment</h2>
+        <p>Pay to confirm your CV order</p>
+
+        <a href="https://checkout.flutterwave.com/pay/your-payment-link" target="_blank">
+            <button class="pay">Pay Now</button>
+        </a>
     </div>
 
-  </div>
-</section>
+    <div class="card">
+        <h2>Contact Info</h2>
+        <p>WhatsApp: 0797337490</p>
+        <p>Email: info@infotec.com</p>
+    </div>
 
-<!-- ORDER FORM -->
-<section id="order">
-  <h2>Order Your CV</h2>
-
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-
-    <input type="text" name="name" placeholder="Full Name" required>
-
-    <input type="text" name="whatsapp" placeholder="WhatsApp Number" required>
-
-    <input type="text" name="job" placeholder="Job Title You Want" required>
-
-    <textarea name="details" placeholder="Education & Experience" rows="5"></textarea>
-
-    <button type="submit">Submit Order</button>
-  </form>
-
-  <p style="margin-top:10px;">
-    ⚠️ After submitting, you will receive payment instructions on WhatsApp.
-  </p>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>WhatsApp: I<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Email: infotecteam@gmail.com</p>
-  <p>Phone: +254797337490</p>
-  <p>Location: Nairobi, Kenya</p>
-
-  <h3>Send us a message</h3>
-  <form>
-    <input type="text" placeholder="Your Name" required><br><br>
-    <input type="email" placeholder="Your Email" required><br><br>
-    <textarea placeholder="Your Message" required></textarea><br><br>
-    <button type="submit">Send</button>
-  </form>
-  </section></p>
-  <p>Email: infotec@gmail.com</p>
-</section>
+</div>
 
 <footer>
-  <p>© 2026 Info-Tec CV Services</p>
+    © 2026 Info-Tec CV Services. All rights reserved.
 </footer>
 
 </body>
